@@ -68,10 +68,10 @@ if (Meteor.isClient) {
     }
   });
   Template.Paginator_UI.events({
-    'click .paginator-prev': function() {
+    'click .paginator-prev': function() {console.log("pre");
       return this.goToPage(this.currentPage() - 1);
     },
-    'click .paginator-next': function() {
+    'click .paginator-next': function() { console.log("next");
       return this.goToPage(this.currentPage() + 1);
     }
   });
